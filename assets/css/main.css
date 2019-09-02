@@ -3260,7 +3260,7 @@ button:disabled,
     -ms-user-select: none;
     user-select: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    background: rgba(46, 49, 65, 0.8);
+    background: rgba(25, 118, 210, 0.4);
     cursor: default;
     height: 100%;
     left: 0;
@@ -3283,7 +3283,7 @@ button:disabled,
     -ms-transition: opacity 0.35s ease, -ms-transform 0.35s ease;
     transition: opacity 0.35s ease, transform 0.35s ease;
     -webkit-overflow-scrolling: touch;
-    background: #4c5c96;
+    background: #0d47a1;
     border-radius: 5px;
     display: block;
     max-width: 100%;
@@ -3339,7 +3339,7 @@ button:disabled,
 }
 
 #menu .links li a:hover {
-    background: #45558d;
+    background: #0d4487;
 }
 
 @media screen and (max-width: 736px) {
