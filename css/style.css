@@ -49,12 +49,18 @@ p {
     line-height: 28px;
 }
 
+ul li {
+    color: #323232;
+    font-size: 1.2rem;
+    line-height: 28px;
+}
+
 p a {
     color: #6496c8;
     transition: color 0.15s;
 }
 
-p a:hover {
+p a:hover, footer p a:hover {
     color: #9dc1e5;
     text-decoration: none;
 }
@@ -71,13 +77,13 @@ strong {
 
 #about,
 #feature,
-#contact {
+#projects {
     background: #ffffff;
 }
 
 #about,
 #feature,
-#contact,
+#projects,
 footer {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -95,7 +101,7 @@ footer {
     padding-bottom: 22px;
 }
 
-#contact .section-title {
+#projects .section-title {
     text-align: center;
 }
 
@@ -387,8 +393,30 @@ footer {
 }
 
 
-/* contact section  */
-#contact .form-control {
+/* projects section  */
+
+#projects .btn {
+    background: transparent;
+    border: 3px solid #000000;
+    border-radius: 0px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 14px 36px;
+    margin-top: 62px;
+    margin-right: 16px;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
+#projects .btn:hover {
+    background: #000000;
+    color: #ffffff;
+    border-color: transparent;
+}
+
+#projects .form-control {
     background: transparent;
     border: 1px solid #f0f0f0;
     border-radius: 0px;
@@ -398,15 +426,15 @@ footer {
     transition: all 0.4s ease-in-out;
 }
 
-#contact .form-control:hover {
+#projects .form-control:hover {
     border-color: #999;
 }
 
-#contact input {
+#projects input {
     height: 55px;
 }
 
-#contact input[type='submit'] {
+#projects input[type='submit'] {
     background: #242424;
     border: none;
     color: #ffffff;
@@ -417,10 +445,9 @@ footer {
     margin-top: 10px;
 }
 
-#contact input[type='submit']:hover {
+#projects input[type='submit']:hover {
     background: #1565c0;
 }
-
 
 /* footer section  */
 footer {
@@ -454,76 +481,8 @@ footer a:hover {
     stroke-width: 0;
 }
 
-/* modal */
-.modal-dialog .modal-content {
-    background: url('../images/modal-bg.jpg') no-repeat;
-    background-size: cover;
-    background-position: center center;
-    border-radius: 0;
-    text-align: center;
-    padding: 100px 50px 100px 50px;
-    position: relative;
-}
-
 .btn:focus {
     outline: none;
-}
-
-.modal-header {
-    border-bottom: 0px;
-}
-
-.modal-dialog .close {
-    color: #1565c0;
-    font-size: 40px;
-    font-weight: 300;
-    text-shadow: none;
-    opacity: 1;
-    position: absolute;
-    top: 40px;
-    right: 40px;
-    border: 2px solid #ffffff;
-    border-radius: 100px;
-    width: 36px;
-    height: 36px;
-    line-height: 35px;
-    text-align: center;
-}
-
-.modal-dialog .close:focus {
-    outline: none;
-}
-
-.modal-dialog form {
-    padding: 20px;
-}
-
-.modal-dialog form input {
-    height: 55px;
-}
-
-.modal-dialog form .form-control {
-    background: transparent;
-    border: 1px solid #f0f0f0;
-    border-radius: 0px;
-    box-shadow: none;
-    font-size: 20px;
-    color: #fff;
-    margin-bottom: 20px;
-    transition: all 0.4s ease-in-out;
-}
-
-.modal-dialog form input[type="submit"] {
-    background: #ffffff;
-    color: #242424;
-    text-transform: uppercase;
-    margin-top: 30px;
-}
-
-.modal-dialog form input[type="submit"]:hover {
-    background: #1565c0;
-    border-color: transparent;
-    color: #ffffff;
 }
 
 /* Back top */
@@ -625,10 +584,6 @@ footer a:hover {
         height: 100vh;
     }
 
-    .modal-dialog .modal-content {
-        padding: 50px 20px;
-    }
-
     footer {
         text-align: center;
     }
@@ -636,12 +591,4 @@ footer a:hover {
     footer .col-sm-6 {
         padding-bottom: 32px;
     }
-
-    .modal-dialog .close {
-        font-size: 35px;
-        width: 25px;
-        height: 25px;
-        line-height: 25px;
-    }
-
 }
